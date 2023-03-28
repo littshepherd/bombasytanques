@@ -3,9 +3,9 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-# server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
-# server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
-# server "db.example.com", user: "deploy", roles: %w{db}
+# server "ubuntu@ec2-54-233-229-82.sa-east-1.compute.amazonaws.com", user: "ubuntu", roles: %w{app db web}, my_property: :my_value
+# server "ubuntu@ec2-54-233-229-82.sa-east-1.compute.amazonaws.com", user: "ubuntu", roles: %w{app web}, other_property: :other_value
+# server "ubuntu@ec2-54-233-229-82.sa-east-1.compute.amazonaws.com", user: "ubuntu", roles: %w{db}
 
 
 
@@ -42,7 +42,7 @@ role :db,  %w{ubuntu@ec2-54-233-229-82.sa-east-1.compute.amazonaws.com}
 # Global options
 # --------------
  set :ssh_options, {
-   keys: %w(/home/smoothcookie/.ssh/id_rsa),
+   keys: %w(/home/smoothcookie/.ssh/bytanques.pem),
    forward_agent: false,
    auth_methods: %w(password)
  }

@@ -89,4 +89,4 @@ production:
   database: bombasytanques_production
   host: localhost
   username: bombasytanques
-  password: bytanques
+  password: bytanques 

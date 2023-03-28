@@ -1,4 +1,6 @@
 # Load DSL and set up stages
+# Capfile
+
 require "capistrano/setup"
 
 # Include default deployment tasks
