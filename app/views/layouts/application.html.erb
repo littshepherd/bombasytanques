@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bombasytanques</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload"%>
+
+    <%= javascript_importmap_tags %>
+
+  </head>
+
+  <body>
+    <%= render 'shared/flash'  %>
+    <%= render 'header/navbar' if Current.user %>
+
+</nav>
+<div class="container">
+
+  <div class="row justify-content-center">
+   
+    <div class="col-8">
+
+    <%= yield %>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

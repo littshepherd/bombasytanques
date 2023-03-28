@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @iva %>
+
+<div>
+  <%= link_to "Edit this iva", edit_iva_path(@iva) %> |
+  <%= link_to "Back to ivas", ivas_path %>
+
+  <%= button_to "Destroy this iva", @iva, method: :delete %>
+</div>

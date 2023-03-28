@@ -1,0 +1,10 @@
+<tr class=" <%= iva.accion.tipo_accion == "Egreso" ?  "table-danger": "" %> ">
+  <th scope="row"> <%= iva.id%> </th>
+  <td> <%= number_with_delimiter(iva.valor, :delimiter => ".")%> </td>
+  <td> <%= iva.comentario%> </td>
+  <td> <%= iva.accion.tipo_accion%> </td>
+  <td> <%= iva.user.nombre%> </td>
+  <td> <%= link_to "Ver", iva %></td>
+
+
+</tr>

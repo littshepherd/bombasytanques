@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @capitalizacion %>
+
+<div>
+  <%= link_to "Edit this capitalizacion", edit_capitalizacion_path(@capitalizacion) %> |
+  <%= link_to "Back to capitalizacions", capitalizacions_path %>
+
+  <%= button_to "Destroy this capitalizacion", @capitalizacion, method: :delete %>
+</div>

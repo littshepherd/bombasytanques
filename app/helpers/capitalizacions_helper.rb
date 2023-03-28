@@ -1,0 +1,2 @@
+module CapitalizacionsHelper
+end

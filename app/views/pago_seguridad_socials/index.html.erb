@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Pago seguridad socials</h1>
+
+<div id="pago_seguridad_socials">
+  <% @pago_seguridad_socials.each do |pago_seguridad_social| %>
+    <%= render pago_seguridad_social %>
+    <p>
+      <%= link_to "Show this pago seguridad social", pago_seguridad_social %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New pago seguridad social", new_pago_seguridad_social_path %>

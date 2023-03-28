@@ -1,0 +1,11 @@
+-# frozen_string_literal: true
+= form_with(url: sessions_path) do |f|
+  -# = f.error_notification
+  -# = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+
+  .form-inputs
+    = f.text_field :email
+    = f.password_field :password
+
+  .form-actions
+    = f.button :submit

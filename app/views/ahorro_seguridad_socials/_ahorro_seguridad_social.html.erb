@@ -1,0 +1,10 @@
+<tr class=" <%= ahorro_seguridad_social.accion.tipo_accion == "Egreso" ?  "table-danger": "" %> ">
+  <th scope="row"> <%= ahorro_seguridad_social.id%> </th>
+  <td> <%= ahorro_seguridad_social.valor%> </td>
+  <td> <%= ahorro_seguridad_social.comentario%> </td>
+  <td> <%= ahorro_seguridad_social.accion.tipo_accion%> </td>
+  <td> <%= ahorro_seguridad_social.user.nombre%> </td>
+  <td> <%= link_to "Ver", ahorro_seguridad_social %></td>
+
+
+</tr>

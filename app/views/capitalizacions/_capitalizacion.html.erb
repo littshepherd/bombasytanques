@@ -1,0 +1,11 @@
+<tr class=" <%= capitalizacion.accion.tipo_accion == "Egreso" ?  "table-danger": "" %> ">
+  <th scope="row"> <%= capitalizacion.id%> </th>
+  <td> <%= capitalizacion.cantidad%> </td>
+  <td> <%= capitalizacion.comentario%> </td>
+  <td> <%= capitalizacion.accion.tipo_accion%> </td>
+  <td> <%= capitalizacion.user.nombre%> </td>
+  <td> <%= link_to "Ver", capitalizacion %></td>
+
+
+</tr>
+
