@@ -73,12 +73,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_23_225711) do
     t.index ["user_id"], name: "index_pago_seguridad_socials_on_user_id"
   end
 
-  create_table "tipo_movimientos", force: :cascade do |t|
-    t.string "type"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "nombre", null: false
     t.string "email", null: false
